@@ -33,7 +33,7 @@ public class Usuario {
 		this.id = id;
 		this.login = login;
 		this.senha = senha;
-		this.status = StatusType.Bloqueado;
+		this.status = StatusType.BLOQUEADO;
 	}
 
 	public Integer getId() {
