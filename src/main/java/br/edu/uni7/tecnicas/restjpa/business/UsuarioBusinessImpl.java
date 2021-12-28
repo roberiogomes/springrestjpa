@@ -19,7 +19,7 @@ public class UsuarioBusinessImpl implements UsuarioBusiness {
 	public boolean autenticar(String login, String senha) {
 		boolean result = false;
 
-		Usuario usuario = repository.findByLoginAndStatus(login, StatusType.Ativo);
+		Usuario usuario = repository.findByLoginAndStatus(login, StatusType.ATIVO);
 		if (usuario != null) {
 			if (usuario.getSenha().equals(senha)) {
 				result = true;

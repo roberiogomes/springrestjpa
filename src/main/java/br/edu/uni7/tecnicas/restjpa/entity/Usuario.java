@@ -11,7 +11,7 @@ import javax.persistence.Id;
 @Entity
 public class Usuario {
 	public static enum StatusType {
-		Ativo, Bloqueado, Desativado
+		ATIVO, BLOQUEADO, DESATIVADO, REMOVIDO
 	}
 
 	@Id
@@ -33,7 +33,7 @@ public class Usuario {
 		this.id = id;
 		this.login = login;
 		this.senha = senha;
-		this.status = StatusType.Bloqueado;
+		this.status = StatusType.BLOQUEADO;
 	}
 
 	public Integer getId() {
