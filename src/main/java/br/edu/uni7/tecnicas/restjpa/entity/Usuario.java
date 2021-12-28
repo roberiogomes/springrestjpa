@@ -11,7 +11,7 @@ import javax.persistence.Id;
 @Entity
 public class Usuario {
 	public static enum StatusType {
-		Ativo, Bloqueado, Desativado
+		Ativo, Bloqueado, Desativado, Removido
 	}
 
 	@Id
